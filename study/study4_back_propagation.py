@@ -1,4 +1,4 @@
-# 梯度下降算法
+# 反向传播算法
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
