@@ -1,4 +1,4 @@
-# 线性模型
+# 线性模型 w * x + b
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -53,5 +53,5 @@ axis.set_xlabel('w', fontdict={'size': 10, 'color': 'red'})
 axis.set_ylabel('b', fontdict={'size': 10, 'color': 'blue'})
 axis.set_zlabel('mse', fontdict={'size': 10, 'color': 'green'})
 
-plt.savefig('mse.png', bbox_inches='tight', dpi=300)
+# plt.savefig('mse.png', bbox_inches='tight', dpi=300)
 plt.show()

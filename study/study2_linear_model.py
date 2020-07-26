@@ -1,4 +1,4 @@
-# 线性模型
+# 线性模型 w * x
 import numpy as np
 import matplotlib.pyplot as plt
 
