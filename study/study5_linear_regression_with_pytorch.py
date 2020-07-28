@@ -17,10 +17,10 @@ class LinearModel(torch.nn.Module):
 
 model = LinearModel()
 
-criterion = torch.nn.MSELoss()
+criterion = torch.nn.MSELoss(reduction='sum')
 optimiser = torch.optim.SGD(model.parameters(), lr=0.01)
 
-for epoch in range(4000):
+for epoch in range(1000):
     y_pred = model(x_data)
     loss = criterion(y_pred, y_data)
     print(epoch, loss.item())
