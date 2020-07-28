@@ -22,8 +22,8 @@ class DiabetesDataset(Dataset):
         return self.len
 
 
-training_epoch = 100
-batch_size = 100
+training_epoch = 3000
+batch_size = 32
 dataset = DiabetesDataset(filepath)
 train_loader = DataLoader(dataset=dataset,
                           batch_size=batch_size,
@@ -79,7 +79,9 @@ if __name__ == '__main__':
             # 4.update
             optimiser.step()
 
-        loss_ls.append(loss_temp)
+            loss_ls.append(loss_temp)  # shift + tab
+        # if loss_temp < 0.01:
+        #     break
 
     epoch_ls = list(np.arange(1, len(loss_ls) + 1, 1))
     plt.plot(epoch_ls, loss_ls)
