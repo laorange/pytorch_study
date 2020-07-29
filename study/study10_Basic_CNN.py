@@ -1,4 +1,4 @@
-# CNN
+# basic CNN
 import torch
 from torchvision import transforms
 from torchvision import datasets
@@ -72,8 +72,8 @@ def train(epoch):
         optimizer.step()
 
         running_loss += loss
-        if batch_idx % 300 == 299:
-            print('第%d轮,训练次数:%d,loss:%.3f' % (epoch + 1, batch_idx + 1, running_loss / 300))
+        if batch_idx % 200 == 199:
+            print('第%d轮,训练次数:%d,loss:%.3f' % (epoch + 1, batch_idx + 1, running_loss / 200))
             running_loss = 0.0
 
 
@@ -104,5 +104,6 @@ if __name__ == '__main__':
     plt.plot(epoch_ls, accuracy_ls, c='r')
     plt.xlabel('Epoch')
     plt.ylabel('accuracy')
-    plt.savefig('study10_basicCNN_MNIST.png', dpi=300)
+    plt.grid()
+    plt.savefig('study10_basic_CNN_MNIST.png', dpi=300)
     plt.show()
