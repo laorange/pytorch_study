@@ -28,21 +28,56 @@ test_dataset = datasets.MNIST(root='../dataset/',
 test_loader = DataLoader(test_dataset, shuffle=False, batch_size=batch_size)
 
 
+class InceptionA(torch.nn.Module):
+    def __init__(self, in_channel):
+        super(InceptionA, self).__init__()
+        self.branch1x1 = torch.nn.Conv2d(in_channel, 16, kernel_size=1)
+
+        self.branch5x5_1 = torch.nn.Conv2d(in_channel, 16, kernel_size=1)
+        self.branch5x5_2 = torch.nn.Conv2d(16, 24, kernel_size=5, padding=2)
+
+        self.branch3x3_1 = torch.nn.Conv2d(in_channel, 16, kernel_size=1)
+        self.branch3x3_2 = torch.nn.Conv2d(16, 24, kernel_size=3, padding=1)
+        self.branch3x3_3 = torch.nn.Conv2d(24, 24, kernel_size=3, padding=1)
+
+        self.branch_pool = torch.nn.Conv2d(in_channel, 24, kernel_size=1)
+
+    def forward(self, x):
+        branch1x1 = self.branch1x1(x)
+
+        branch5x5 = self.branch5x5_1(x)
+        branch5x5 = self.branch5x5_2(branch5x5)
+
+        branch3x3 = self.branch3x3_1(x)
+        branch3x3 = self.branch3x3_2(branch3x3)
+
+        branch_pool = torch.nn.functional.avg_pool2d(x, kernel_size=3, stride=1, padding=1)
+        branch_pool = self.branch_pool(branch_pool)
+
+        outputs = [branch1x1, branch5x5, branch3x3, branch_pool]
+        return torch.cat(outputs, dim=1)
+
+
 class Net(torch.nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.conv1 = torch.nn.Conv2d(1, 10, kernel_size=5)  # 10,24,24  pool: 10,12,12
-        self.conv2 = torch.nn.Conv2d(10, 20, kernel_size=5)  # 20,8,8   pool: 20,4,4
-        self.pooling = torch.nn.MaxPool2d(2)
-        self.fc = torch.nn.Linear(320, 10)  # full_connected_neural_network
+        self.conv1 = torch.nn.Conv2d(1, 10, kernel_size=5)
+        self.conv2 = torch.nn.Conv2d(88, 20, kernel_size=5)
+
+        self.incep1 = InceptionA(in_channel=10)
+        self.incep2 = InceptionA(in_channel=20)
+
+        self.mp = torch.nn.MaxPool2d(2)
+        self.fc = torch.nn.Linear(1408, 10)  # 1408是28x28经过网络后计算得出的数据量
 
     def forward(self, x):
-        # Flatten data from (n, 1, 28, 28) to (n, 784)
-        batch_size = x.size(0)
-        x = torch.relu(self.pooling(self.conv1(x)))
-        x = torch.relu(self.pooling(self.conv2(x)))
-        x = x.view(batch_size, -1)
-        x = self.fc(x)  # 因为用交叉熵损失，最后一层不作激活
+        in_size = x.size(0)
+        x = torch.relu(self.mp(self.conv1(x)))
+        x = self.incep1(x)
+        x = torch.relu(self.mp(self.conv2(x)))
+        x = self.incep2(x)
+        x = x.view(in_size, -1)
+        self.fc(x)
         return x
 
 
@@ -51,7 +86,7 @@ model = Net()
 # Move model to GPU
 # Define device as the first visible cuda device if we have CUDA available.
 device = torch.device("cuda:0" if torch.cuda.is_available() else 'cpu')  # GPU--------------
-print(torch.cuda.is_available())
+print('use GPU:', torch.cuda.is_available())
 model.to(device)  # convert parameters and buffers of all modules to CUDA tensor.
 
 criterion = torch.nn.CrossEntropyLoss()
@@ -92,7 +127,7 @@ def test():
             total += label.size(0)
             correct += (predicted == label).sum().item()
         accuracy_ls.append(correct / total)
-        print('Accuracy on test set: %.2f %%' % (100 * correct / total))
+        print('Accuracy on test set: %d %%' % (100 * correct / total))
 
 
 if __name__ == '__main__':
@@ -102,18 +137,18 @@ if __name__ == '__main__':
             train(epoch)
             test()
 
-        epoch_ls = list(np.arange(1, len(accuracy_ls)+1))
+        epoch_ls = list(np.arange(1, len(accuracy_ls) + 1))
         plt.plot(epoch_ls, accuracy_ls, c='r')
         plt.xlabel('Epoch')
         plt.ylabel('accuracy')
         plt.grid()
-        plt.savefig('study10_basic_CNN_MNIST.png', dpi=300)
+        plt.savefig('study11_inception_MNIST.png', dpi=300)
         plt.show()
 
-        torch.save(model, 'study10_model.pth')
+        torch.save(model, 'study11_model.pth')
 
     elif choice == '1':
-        model = torch.load('study10_model.pth')
+        model = torch.load('study11_model.pth')
         test()
 
     else:

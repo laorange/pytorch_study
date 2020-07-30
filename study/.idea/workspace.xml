@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd9f1d8e-a68f-4fcc-b93f-0720c3ba2217" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/study11_Advanced_CNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study10_model.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study11_Inception_Module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study11_Simple_Residual_Network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study11_inception_MNIST.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study11_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study11_model.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/study10_Basic_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/study10_Basic_CNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/study10_basic_CNN_MNIST.png" beforeDir="false" afterPath="$PROJECT_DIR$/study10_basic_CNN_MNIST.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study11_Advanced_CNN.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +46,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Program Files/python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.study10_Basic_CNN">
+  <component name="RunManager" selected="Python.study11_main">
     <configuration name="study10_Basic_CNN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,7 +69,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="study7_multiple_dimension_input" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="study11_Inception_Module" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,7 +82,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study7_multiple_dimension_input.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study11_Inception_Module.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="study9_softmax_classifier" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="study11_Simple_Residual_Network" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,7 +104,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study9_softmax_classifier.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study11_Simple_Residual_Network.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="study11_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,7 +126,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study11_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.study11_main" />
         <item itemvalue="Python.study10_Basic_CNN" />
         <item itemvalue="Python tests.pytest in study10_Basic_CNN.py" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.study7_multiple_dimension_input" />
-        <item itemvalue="Python.study9_softmax_classifier" />
+        <item itemvalue="Python.study11_Inception_Module" />
+        <item itemvalue="Python.study11_Simple_Residual_Network" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +180,7 @@
       <workItem from="1595915656331" duration="14639000" />
       <workItem from="1595985810685" duration="8041000" />
       <workItem from="1596003745651" duration="5596000" />
+      <workItem from="1596075228746" duration="10362000" />
     </task>
     <servers />
   </component>
@@ -192,22 +199,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="244" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1595769990645" />
-    <state width="1237" height="333" key="GridCell.Tab.0.bottom" timestamp="1596035522240">
+    <state width="1237" height="385" key="GridCell.Tab.0.bottom" timestamp="1596103203543">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="333" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1596035522240" />
-    <state width="1237" height="333" key="GridCell.Tab.0.center" timestamp="1596035522240">
+    <state width="1237" height="385" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1596103203543" />
+    <state width="1237" height="385" key="GridCell.Tab.0.center" timestamp="1596103203543">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="333" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1596035522240" />
-    <state width="1237" height="333" key="GridCell.Tab.0.left" timestamp="1596035522240">
+    <state width="1237" height="385" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1596103203543" />
+    <state width="1237" height="385" key="GridCell.Tab.0.left" timestamp="1596103203542">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="333" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1596035522240" />
-    <state width="1237" height="333" key="GridCell.Tab.0.right" timestamp="1596035522240">
+    <state width="1237" height="385" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1596103203542" />
+    <state width="1237" height="385" key="GridCell.Tab.0.right" timestamp="1596103203543">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="333" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1596035522240" />
+    <state width="1237" height="385" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1596103203543" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1595810305731">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -216,23 +223,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1595847298377" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1595943797111">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1596075630259">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1595943797111" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1596075630259" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/study$study6_logistic_regression.coverage" NAME="study6_logistic_regression Coverage Results" MODIFIED="1595857131128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/study$pytest_in_study10_Basic_CNN_py.coverage" NAME="pytest in study10_Basic_CNN.py Coverage Results" MODIFIED="1595999676762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/study$study8_Dataset_and_DataLoader.coverage" NAME="study8_Dataset_and_DataLoader Coverage Results" MODIFIED="1595920948576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/study$study5_linear_regression_with_pytorch.coverage" NAME="study5_linear_regression_with_pytorch Coverage Results" MODIFIED="1595844794345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$study11_Inception_Module.coverage" NAME="study11_Inception_Module Coverage Results" MODIFIED="1596080277771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/study$study2_linear_model.coverage" NAME="study2_linear_model Coverage Results" MODIFIED="1595733912317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/study$study2_homework.coverage" NAME="study2_homework Coverage Results" MODIFIED="1595733916933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/study$study10_Basic_CNN.coverage" NAME="study10_Basic_CNN Coverage Results" MODIFIED="1596003790913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$study11_main.coverage" NAME="study11_main Coverage Results" MODIFIED="1596100819448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/study$study3_gridient_descent.coverage" NAME="study3_gridient_descent Coverage Results" MODIFIED="1595735780032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/study$study4_back_propagation.coverage" NAME="study4_back_propagation Coverage Results" MODIFIED="1595769630739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/study$test.coverage" NAME="test Coverage Results" MODIFIED="1595994022503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$study6_logistic_regression.coverage" NAME="study6_logistic_regression Coverage Results" MODIFIED="1595857131128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$pytest_in_study10_Basic_CNN_py.coverage" NAME="pytest in study10_Basic_CNN.py Coverage Results" MODIFIED="1596099293491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$study8_Dataset_and_DataLoader.coverage" NAME="study8_Dataset_and_DataLoader Coverage Results" MODIFIED="1595920948576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$study5_linear_regression_with_pytorch.coverage" NAME="study5_linear_regression_with_pytorch Coverage Results" MODIFIED="1595844794345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$study10_Basic_CNN.coverage" NAME="study10_Basic_CNN Coverage Results" MODIFIED="1596100331834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$study4_back_propagation.coverage" NAME="study4_back_propagation Coverage Results" MODIFIED="1595769630739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/study$study9_softmax_classifier.coverage" NAME="study9_softmax_classifier Coverage Results" MODIFIED="1595943959223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/study$study7_multiple_dimension_input.coverage" NAME="study7_multiple_dimension_input Coverage Results" MODIFIED="1595944483565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/study$study11_Simple_Residual_Network.coverage" NAME="study11_Simple_Residual_Network Coverage Results" MODIFIED="1596080246920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
